@@ -1,19 +1,27 @@
-body,html {
-    margin: 0;
-    padding: 0;
+*, ::after, ::before {
+    box-sizing: border-box;
 }
 
-.hero {
+/*.hero {
     position: relative;
     overflow: hidden;
     height: 100vh;
-    background-image: url(/assets/OIP.jpg);
+    background: url(/assets/OIP.jpg) center/cover;
     background-size: cover;
+    width: 100%;
     background-repeat: no-repeat;
     margin:0;
     padding: 0;
     background-position: center;
     opacity: 90%;
+}*/
+
+.hero {
+    height: 100vh;
+    background: url(/assets/OIP.jpg) center/cover;
+    width: 100%;
+    position: relative;
+    margin-top: 0,8rem;
 }
 
 
@@ -44,7 +52,6 @@ footer {
     margin: 0px auto;
     padding-left: 5%;
     color:black;
-
 }
 
 .columna {
@@ -65,7 +72,7 @@ footer {
 
 #menu {
     display: none;
-    color: white;
+    color: black;
     font-weight: bold;
     font-size: 1.8em;
     position: absolute;
@@ -82,7 +89,7 @@ nav {
 
 nav a {
     color: white;
-
+    font-size: 1.5em;
 }
 
 
@@ -92,15 +99,18 @@ nav ul {
     list-style-type: none;
     
     
-}
-
-nav ul li {
-   float: right;
-    margin: 0 5px;
     
 }
 
-head {
+nav ul li {
+    float: right;
+    margin:  5px;
+    
+    
+    
+}
+
+header {
     height: 30px;
     width: 100%;
     place-content: flex-start;
@@ -113,6 +123,10 @@ head {
 #menu-check {
     display: none;
 }
+.cabecera{
+    background-color:  rgba(0, 0, 0, 0.145);
+}
+
 
 @media only screen and (max-width:700px) {
     #menu-check:not(:checked) ~ nav {
@@ -155,6 +169,38 @@ head {
         display: block;
         text-align: right;
     }
-
+   
   
+}
+
+.formulario {
+    border:1px solid grey;
+    margin:auto;
+    width: 25%;
+    padding:20px;
+    background-color: rgba(0, 0, 0, 0.145);
+}
+.campoFormulario{
+    margin:5px;
+}
+label{
+    font-size: 15px;
+    display:inline-block;
+    text-align: right;
+    width: 120px;
+    margin-right: 10px;
+}
+.divbotonenviar{
+    text-align: center;
+    width: 100%;
+
+    
+    
+
+
+}
+#enviar:hover {
+    color:rgb(65, 63, 63);
+    cursor:pointer;
+
 }
