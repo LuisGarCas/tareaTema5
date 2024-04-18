@@ -204,3 +204,37 @@ label{
     cursor:pointer;
 
 }
+#rowcarrusel{
+    display:flex;
+    width: 60%;
+    margin:auto;
+    padding: 20px;
+}
+#carrusel{
+    width: 80%;
+    margin:auto;
+    display:flex;
+    overflow: hidden;
+    
+}
+#carrusel-content{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+
+}
+#carrusel-content img{
+    width: 100%;
+    transition: transform 0,5s ease;
+     float: left;
+
+}
+#botonescarruselizq{
+    float:right;
+}
+#botonescarruselde{
+    float:left;
+}
+.btncarrusel{
+    cursor:pointer;
+}
